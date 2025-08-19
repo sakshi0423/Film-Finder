@@ -1,0 +1,153 @@
+body {
+  background-color: #000000;
+  color: #db0000;
+}
+
+#appTitle {
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  display: block;
+  font-family: "Staatliches", sans-serif;
+  font-size: 45px;
+  text-shadow: 3px 3px 4px #ba050080;
+}
+
+#genreForm,
+#playBtn {
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  font-family: "Fredoka One", sans-serif;
+}
+
+#movieInfo {
+  width: 65%;
+  margin: 32px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#loader {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#loader span {
+  font-size: 45px;
+  animation: flash 2s infinite linear;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+}
+
+#moviePoster {
+  flex: 1;
+}
+
+#movieText {
+  flex: 1.5;
+}
+
+img#moviePoster {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+#movieText {
+  font-family: "Questrial";
+  color: #fefbea;
+  line-height: 1.25;
+}
+
+#genres {
+  width: 250px;
+  font-size: 20px;
+  padding: 7px 10px;
+  border-style: none;
+  background-color: #ffffff;
+  color: #db0000;
+  font-family: "Fredoka One", sans-serif;
+  border-radius: 5px;
+}
+
+#genres:focus {
+  outline: none;
+}
+
+#playBtn {
+  margin-top: 25px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #db0000;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+#playBtn:hover {
+  transform: scale(0.9);
+}
+
+#playBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+label {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+select {
+  width: 200px;
+  height: auto;
+}
+
+#likeOrDislikeBtns {
+  text-align: center;
+  margin: 0px auto;
+}
+
+#likeBtn,
+#dislikeBtn {
+  padding: 15px 25px;
+  font-size: 25px;
+  border-radius: 12px;
+  border-style: none;
+  cursor: pointer;
+}
+
+#likeBtn {
+  background-color: #249e57;
+  color: darkgreen;
+}
+
+#dislikeBtn {
+  background-color: #db0000;
+  color: #910000;
+}
